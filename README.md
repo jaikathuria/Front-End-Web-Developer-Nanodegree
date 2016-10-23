@@ -1,6 +1,6 @@
-![alt text][image]
+![image]
 
-[image]: https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/readme/header.png "Frontend Web Developer"
+[image]:https://raw.githubusercontent.com/jaikathuria/Front-End-Web-Developer-Nanodegree/master/readme/header.png?token=AMzQ10zLpeCzXflQRNkyjqZubcgYKTisks5YFmZtwA%3D%3D "Frontend Web Developer"
 _________________________
 ### The Journey of completing Frontend Web Developer Nanodegree was wonderful. This Repo contains all the projects that I made to complete the Nanodegree.
 #
@@ -123,6 +123,6 @@ ________________________________________________________________________________
 
 ## Certificate
 
-![alt text][certi]
+![certi]
 
-[certi]: https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/readme/certificate.png "Certificate"
+[certi]:https://raw.githubusercontent.com/jaikathuria/Front-End-Web-Developer-Nanodegree/master/readme/certificate.png?token=AMzQ19zeUlsHYdAHaojQ_y236k_V-G_eks5YFmXGwA%3D%3D "Certificate"
