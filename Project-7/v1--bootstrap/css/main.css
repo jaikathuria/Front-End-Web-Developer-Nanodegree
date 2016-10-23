@@ -1,0 +1,66 @@
+* {
+  border-radius: 0 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+        height: 100%;
+}
+
+/* Some changes in bootstrap classes */
+.navbar{
+    min-height: 70px;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;    
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-inverse {
+  background-color: #e74c3c;
+  border: none;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(148,148,148,0.5);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(148,148,148,0.5);
+  box-shadow: 0px 5px 10px 0px rgba(148,148,148,0.5);
+}
+
+.navbar-inverse .navbar-brand{
+    color: #fff;
+}
+
+.nav li a {
+    color: #e74c3c;
+}
+
+.top-buffer { 
+    margin-top:20px; 
+}
+
+.btn-group a{
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#map {
+        margin-top: 5vh;
+        height: 50vh;
+        width: 100%;
+        border: 5px solid #e74c3c;
+        -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.5);
+}
+.container {
+    height: 100%;
+}
+.search *{
+    border: 1px solid #e74c3c;
+}

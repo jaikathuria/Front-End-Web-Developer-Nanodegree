@@ -1,0 +1,73 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: #fff;
+}
+
+.container {
+    margin-bottom: 5vh;
+}
+
+header {
+    margin: 5vh 0 2vh 0;
+    min-height: 125px;
+    border: 1px solid #e74c3c;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(231,76,60,1);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(231,76,60,1);
+    box-shadow: 0px 5px 0px 0px rgba(231,76,60,1);
+}
+
+.logo img {
+    height: 125px;
+}
+
+.small-logo img {
+    margin: 0 35vw 0 33vw;
+    width: 30vw;
+}
+
+.main-img img {
+    width: 100%;
+    margin:0 0 2vh 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.name h1 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.name h3 {
+    color: #e74c3c;
+    font-weight: 900;
+}
+
+.feature-box {
+    border: 1px solid #e74c3c;
+}
+
+.feature-box h2 {
+    font-weight: 900;
+    
+}
+
+.feature {
+    padding: 3px;
+}
+
+.feature img {
+    width: 100%;
+    border: 1px solid #e74c3c;
+}
+
+.feature a {
+    color: #e74c3c;
+    font-size: 20px;    
+}
+
+.margin-left-right-1 {
+    margin: 0 1vw 0 1vw;
+}

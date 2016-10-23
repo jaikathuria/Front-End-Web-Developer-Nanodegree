@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- title -->
+        <title>PB13| MAP</title>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Pacifico" rel="stylesheet">
+        <!-- bootstrap -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- styles -->
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="">pb 13</a>
+            </div>
+          </div>
+      </nav>
+      <div class="container">
+              <ul class="nav nav-tabs nav-tabs-justified">
+                <li class="active"><a data-toggle="tab" href="#all">All</a></li>
+                <li><a data-toggle="tab" href="#food">Food</a></li>
+                <li><a data-toggle="tab" href="#entertainment">Fun</a></li>
+                <li><a data-toggle="tab" href="#medicine">Medicine</a></li>
+                <li><a data-toggle="tab" href="#search">Search</a></li>
+              </ul>
+
+
+
+          <div class="tab-content">
+            <div id="all" class="tab-pane fade in active top-buffer">
+             <!-- All places -->
+              <div id="allDiv" class="mob-justified btn-group btn-group-justified" role="group" data-bind="foreach: markerList">
+                  <div class="btn-group" role="group">
+                    <a  class="btn btn-default" data-bind="text: name, click: $parent.setSelected"></a>
+                  </div>
+              </div>
+            </div>
+            <div id="food" class="tab-pane fade top-buffer">
+                 <!-- All places -->
+                  <div class="btn-group btn-group-justified" role="group"  data-bind="foreach: markerList">
+                     <!-- ko if: cat=="food" -->
+                      <div class="btn-group" role="group">
+                        <a  class="btn btn-default" data-bind="text: name, click: $parent.setSelected"></a>
+                      </div>
+                      <!-- /ko -->
+                  </div>
+              </div>
+            <div id="entertainment" class="tab-pane fade top-buffer">
+              <div class="btn-group btn-group-justified" role="group" data-bind="foreach: markerList">
+                    <!-- ko if: cat=="fun" -->
+                     <div class="btn-group" role="group">
+                        <a  class="btn btn-default" data-bind="text: name, click: $parent.setSelected"></a>
+                      </div>
+                    <!-- /ko -->
+              </div>
+            </div>
+            <div id="medicine" class="tab-pane fade top-buffer">
+              <div class="btn-group btn-group-justified" role="group" data-bind="foreach: markerList">
+                 <!-- ko if: cat=="medicine" -->
+                  <div class="btn-group" role="group">
+                    <a  class="btn btn-default" data-bind="text: name, click: $parent.setSelected"></a>
+                  </div>
+                 <!-- /ko -->
+              </div>
+            </div>
+            <div id="search" class="tab-pane fade top-buffer">
+                <div class="navbar">
+                   <div class="container">
+                        <form class="navbar-form col-md-4 col-md-push-4 col-lg-4 col-lg-push-4 col-sm-4 col-sm-push-4" role="search">
+                            <div class="form-group search">
+                              <input type="text" class="form-control" placeholder="Search" data-bind="value: searchText, valueUpdate: 'afterkeydown', event: { keyup: search }">
+                            </div>
+                        </form>
+                   </div>
+                 </div>
+                 <div class="mob-justified btn-group btn-group-justified" role="group" data-bind="foreach: markerList">
+                      <!-- ko if: show  -->
+                      <div class="btn-group" role="group">
+                            <a  class="btn btn-default" data-bind="text: name, click: $parent.setSelected"></a>
+                      </div>
+                      <!-- /ko -->
+                  </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div id="error"><h4 data-bind="text: errorDisplay"></h4></div>
+    </div>
+
+       <!-- Google Map Initialise -->
+
+       <!-- JS Libraries -->
+
+        <script src="jquery/jquery-2.2.4.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="knockout/knockout-3.4.0.js"></script>
+         <script>
+              var map,markerInfo;
+              function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 30.283816, lng: 75.835060},
+                  zoom: 12
+                });
+              markerInfo = new google.maps.InfoWindow();
+
+              ko.applyBindings(new ViewModel());
+              }
+             function googleError(){
+			         document.getElementById('map-error').innerHTML = "Map didnt Worked!"
+
+		      }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuYk8E0TdypRHrzu29dLZmPuWA8-UEo1o&callback=initMap" async defer onerror="googeError()"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

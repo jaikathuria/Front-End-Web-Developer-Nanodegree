@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Neighbourhood</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Pacifico" rel="stylesheet">
+        <link href="materialize/css/materialize.css" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">      
+    </head>
+    <body>
+         <ul id="slide-out" class="side-nav">
+          <li>
+             <div class="row">
+               <div class="input-field col s12 margin-top">
+                  <input id="search" type="text" class="validate" data-bind="value: searchText, valueUpdate: 'afterkeydown', event: { keyup: search }">
+                  <label for="search">Search</label>
+               </div>
+            </div>
+          </li>
+           <!-- ko foreach: markers -->
+                 <!-- ko if: show  -->
+            <li><a data-bind="text: name, click: $parent.setSelected"></a></li>
+                 <!-- /ko -->
+            <!-- /ko -->
+         </ul>
+        <div class="navbar-fixed">
+            <nav>
+              <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center pacifico">My Neighbourhood</a>
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+             </div>
+         </nav>
+       </div>
+       
+       <div id="map" ></div>
+       
+       <!-- ko if: errorMessage  -->
+       <div id="error"><h4 data-bind="text: errorMessage"></h4></div>
+       <!-- /ko -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="knockout/knockout-3.4.0.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2KAO0TxzQtNxs-zlyIsId9oik-XhvZzk&callback=initMap" onerror="googleError()" async defer></script>
+
+        
+         
+    </body>
+</html>

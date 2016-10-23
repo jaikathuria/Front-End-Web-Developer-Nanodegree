@@ -1,0 +1,17 @@
+#map{
+    height: calc(100vh - 56px);
+}   
+@media only screen and (min-width: 601px){
+    #map{
+        height: calc(100vh - 64px);
+    }    
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;    
+}
+
+
+.margin-top {
+    margin-top: 50px;
+}

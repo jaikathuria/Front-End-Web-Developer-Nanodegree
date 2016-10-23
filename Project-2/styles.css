@@ -1,0 +1,41 @@
+/* add your CSS here */
+body{
+ font-size: 20px;
+}
+
+.card{
+    margin: 50px 35%;
+    width: 350px;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    border: 0.5px solid #e3e3e3;
+}
+.card img, .card div {
+    margin-left:25px;
+    margin-right: 25px;
+}
+h1 {
+    padding-top: 20px;
+    margin: 3% 25px;
+}
+
+.card img{
+    width: 300px;
+}
+.box{
+    border: 1px solid #bcbcbc;
+    padding: 5px;
+    margin: 25px;
+}
+ul{
+    list-style:none;
+    margin-left: -35px;
+}
+li span{
+    font-weight: bold;
+    font-style: normal;
+}
+li{
+    font-style: italic;
+}
