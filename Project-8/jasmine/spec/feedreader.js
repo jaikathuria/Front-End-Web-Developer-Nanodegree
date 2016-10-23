@@ -24,7 +24,7 @@ $(function() {
          * and that the URL is not empty.
          */
         
-        it('have URL', function(){
+        it('is URL defined', function(){
             for(i in allFeeds){
                  expect(allFeeds[i].url).toBeDefined();
                  expect(allFeeds[i].url).not.toBeNull();
@@ -38,7 +38,7 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        it('have Name', function(){
+        it('is name defined', function(){
             for(i in allFeeds){
                  expect(allFeeds[i].name).toBeDefined();
                  expect(allFeeds[i].name).not.toBeNull();
@@ -63,7 +63,7 @@ $(function() {
           * This test have two expectations: 1) does the menu display when
           * clicked and 2) does it hide when clicked again.
           */
-        it('is visbible when click on menu icon and then hides when it is clicked again',function(){
+        it('visibility change when menu icon is clicked',function(){
             $(".menu-icon-link").click(); // to check the click triggered expectation
             expect($('body').hasClass("menu-hidden")).not.toBe(true);
             $(".menu-icon-link").click(); // to check the click triggered expectation
@@ -84,7 +84,7 @@ $(function() {
             });
         });
         
-        it('are there in .feed container',function(done){
+        it('feed container has minimum of 1 entry',function(done){
             expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
