@@ -48,11 +48,11 @@ Front-End-Web-Developer-Nanodegree/
 #
 ## Links to Live Project Demo
 ____________________________________________________________________________________________
-## 1. [Mockup to Article](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-1/)
+### 1. [Mockup to Article](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-1/)
 #
-## 2. [Animal Trading Cards](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-2/)
+### 2. [Animal Trading Cards](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-2/)
 #
-## 3. [Build a Portfolio Site](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-3/)
+### 3. [Build a Portfolio Site](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-3/)
 #
 ##### + Precisely translate initial design documents into static web pages.
 #
@@ -62,7 +62,7 @@ ________________________________________________________________________________
 #
 ##### + Create and personalize your own multi-platform, responsive CSS framework.
 #
-## 4. [Resume Builder](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-4/)
+### 4. [Resume Builder](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-4/)
 #
 ##### + Transform static web pages into dynamic applications.
 #
@@ -70,7 +70,7 @@ ________________________________________________________________________________
 #
 ##### + Use the core features of jQuery -- DOM element selections, traversal and manipulation.
 #
-## 5. [Classic Arcade Game](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-5/)
+### 5. [Classic Arcade Game](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-5/)
 #
 ##### + Utilize the various object-oriented programming features within JavaScript.
 #
@@ -84,7 +84,7 @@ ________________________________________________________________________________
 #
 ##### + Create animations.
 #
-#### 6. [Website Optimization](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-6/)
+### 6. [Website Optimization](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-6/)
 #
 ##### + Recognize the four distinct phases in an app's lifecycle: Response, Animation, Idle and Load (RAIL)
 #
@@ -96,7 +96,7 @@ ________________________________________________________________________________
 #
 ##### + Use key metrics to triangulate potential performance bottlenecks
 #
-#### 7. [Neighborhood Map](#)
+### 7. [Neighborhood Map](#)
 ### =>  [v1--bootstrap](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-7/v1--bootstrap/)
 ### =>  [v2--materialize](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-7/v2--materialize/)
 #
@@ -110,7 +110,7 @@ ________________________________________________________________________________
 #
 ##### + Use third-party libraries and APIs
 #
-#### 8. [Feed Reader Testing](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-8/)
+### 8. [Feed Reader Testing](https://jaikathuria.github.io/Front-End-Web-Developer-Nanodegree/Project-8/)
 #
 ##### + Write comprehensive suites of tests to validate your application is functioning as intended at all times
 #
