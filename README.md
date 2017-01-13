@@ -125,4 +125,4 @@ ________________________________________________________________________________
 
 ![certi]
 
-[certi]:https://raw.githubusercontent.com/jaikathuria/Front-End-Web-Developer-Nanodegree/master/readme/certificate.png?token=AMzQ19zeUlsHYdAHaojQ_y236k_V-G_eks5YFmXGwA%3D%3D "Certificate"
+[certi]:https://raw.githubusercontent.com/jaikathuria/Front-End-Web-Developer-Nanodegree/master/readme/certificate_new.png "Certificate"
